@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Grammar Quiz - Auto Graded</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 { color: #4a235a; }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        .question {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .question label {
+            width: 250px;
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+        .part2-q {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .part2-q label {
+            width: auto;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .part2-q input[type="text"] {
+            width: 100%;
+            max-width: 100%;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4a235a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover { background-color: #6a3482; }
+        .student-info { margin-bottom: 20px; }
+        #resultsBox {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Simple Present Tense Practice</h1>
+    
+    <div class="student-info">
+        <label for="studentName"><strong>Student Name:</strong></label><br>
+        <input type="text" id="studentName" placeholder="Enter your full name" required style="width: 100%; max-width: 400px;">
+    </div>
+
+    <form id="quizForm">
+        <div class="section">
+            <h2>Part A: Third Person Singular</h2>
+            <p>Rewrite the following verbs in the simple present tense for the third person singular.</p>
+            <div class="question"><label>1. I watch &rarr; He</label><input type="text" id="a1"></div>
+            <div class="question"><label>2. We stop &rarr; She</label><input type="text" id="a2"></div>
+            <div class="question"><label>3. They listen &rarr; He</label><input type="text" id="a3"></div>
+            <div class="question"><label>4. You pass &rarr; It</label><input type="text" id="a4"></div>
+            <div class="question"><label>5. They change &rarr; He</label><input type="text" id="a5"></div>
+            <div class="question"><label>6. I have &rarr; She</label><input type="text" id="a6"></div>
+            <div class="question"><label>7. We eat &rarr; It</label><input type="text" id="a7"></div>
+            <div class="question"><label>8. You wash &rarr; He</label><input type="text" id="a8"></div>
+            <div class="question"><label>9. They do &rarr; She</label><input type="text" id="a9"></div>
+            <div class="question"><label>10. I sing &rarr; It</label><input type="text" id="a10"></div>
+            <div class="question"><label>11. We surf &rarr; He</label><input type="text" id="a11"></div>
+            <div class="question"><label>12. You check &rarr; She</label><input type="text" id="a12"></div>
+        </div>
+
+        <div class="section">
+            <h2>Part B: Pronunciation</h2>
+            <p>Classify the verbs from Section A according to their pronunciation.</p>
+            <div class="question"><label>1. watch (watches)</label><select id="b1"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>2. stop (stops)</label><select id="b2"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>3. listen (listens)</label><select id="b3"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>4. pass (passes)</label><select id="b4"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>5. change (changes)</label><select id="b5"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>6. have (has)</label><select id="b6"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>7. eat (eats)</label><select id="b7"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>8. wash (washes)</label><select id="b8"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>9. do (does)</label><select id="b9"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>10. sing (sings)</label><select id="b10"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>11. surf (surfs)</label><select id="b11"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+            <div class="question"><label>12. check (checks)</label><select id="b12"><option value="">--Select--</option><option value="/Iz/">/Iz/</option><option value="/s/">/s/</option><option value="/z/">/z/</option></select></div>
+        </div>
+
+        <div class="section">
+            <h2>Part II: Negative Sentences</h2>
+            <p>Write negative sentences in the simple present tense using the information provided. <em>(Hint actions are in brackets based on the worksheet images).</em></p>
+            <div class="question part2-q"><label>1. Jorge / [play chess] / after school /.</label><input type="text" id="c1" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>2. Alejandra / [play soccer] / on the soccer field /.</label><input type="text" id="c2" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>3. My friends / [wash the car] / in their leisure time /.</label><input type="text" id="c3" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>4. Patricia / [have a picnic] / with her family /.</label><input type="text" id="c4" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>5. Silvia and Marcos / [play baseball] / at the park after classes /.</label><input type="text" id="c5" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>6. Daniela / [fly a kite] / on weekends /.</label><input type="text" id="c6" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>7. My dog / [catch a ball] / when I get home from school /.</label><input type="text" id="c7" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>8. Carlos / [play the guitar] / in music classes on Friday /.</label><input type="text" id="c8" placeholder="Type your full sentence here..."></div>
+            <div class="question part2-q"><label>9. Marcela / [buy groceries] / twice a week /.</label><input type="text" id="c9" placeholder="Type your full sentence here..."></div>
+        </div>
+
+        <button type="button" onclick="gradeAndDownload()">Grade, Submit, and Download</button>
+        
+        <div id="resultsBox"></div>
+    </form>
+</div>
+
+<script>
+    // Answer Key
+    const answerKey = {
+        // Part A
+        a1: ["watches"], a2: ["stops"], a3: ["listens"], a4: ["passes"], a5: ["changes"], a6: ["has"],
+        a7: ["eats"], a8: ["washes"], a9: ["does"], a10: ["sings"], a11: ["surfs"], a12: ["checks"],
+        // Part B
+        b1: ["/Iz/"], b2: ["/s/"], b3: ["/z/"], b4: ["/Iz/"], b5: ["/Iz/"], b6: ["/z/"],
+        b7: ["/s/"], b8: ["/Iz/"], b9: ["/z/"], b10: ["/z/"], b11: ["/s/"], b12: ["/s/"],
+        // Part II (Accepts "does not" or "doesn't" / "do not" or "don't")
+        c1: ["jorge doesn't play chess after school", "jorge does not play chess after school"],
+        c2: ["alejandra doesn't play soccer on the soccer field", "alejandra does not play soccer on the soccer field"],
+        c3: ["my friends don't wash the car in their leisure time", "my friends do not wash the car in their leisure time"],
+        c4: ["patricia doesn't have a picnic with her family", "patricia does not have a picnic with her family"],
+        c5: ["silvia and marcos don't play baseball at the park after classes", "silvia and marcos do not play baseball at the park after classes"],
+        c6: ["daniela doesn't fly a kite on weekends", "daniela does not fly a kite on weekends"],
+        c7: ["my dog doesn't catch a ball when i get home from school", "my dog does not catch a ball when i get home from school"],
+        c8: ["carlos doesn't play the guitar in music classes on friday", "carlos does not play the guitar in music classes on friday"],
+        c9: ["marcela doesn't buy groceries twice a week", "marcela does not buy groceries twice a week"]
+    };
+
+    // Helper to clean strings for comparison (removes spaces, punctuation, lowercase)
+    function normalizeString(str) {
+        return str.toLowerCase().replace(/[.,]/g, '').trim().replace(/\s+/g, ' ');
+    }
+
+    function gradeAndDownload() {
+        const studentName = document.getElementById('studentName').value || "Unknown_Student";
+        const date = new Date().toLocaleString();
+        
+        let score = 0;
+        let totalQuestions = 33;
+        
+        let outputText = `======================================\n`;
+        outputText += ` ENGLISH GRAMMAR QUIZ RESULTS\n`;
+        outputText += `======================================\n`;
+        outputText += `Student Name: ${studentName}\n`;
+        outputText += `Completed On: ${date}\n\n`;
+
+        // Grading logic generator
+        function gradeSection(prefix, count, title) {
+            outputText += `--- ${title} ---\n`;
+            for (let i = 1; i <= count; i++) {
+                const qId = prefix + i;
+                const rawAnswer = document.getElementById(qId).value;
+                const cleanAnswer = normalizeString(rawAnswer);
+                const acceptableAnswers = answerKey[qId];
+                
+                let isCorrect = false;
+                if (acceptableAnswers.includes(cleanAnswer) || acceptableAnswers.includes(rawAnswer)) {
+                    isCorrect = true;
+                    score++;
+                }
+
+                const mark = isCorrect ? "[CORRECT]" : "[INCORRECT]";
+                outputText += `Q${i}: ${rawAnswer || "(blank)"} ${mark}\n`;
+            }
+            outputText += `\n`;
+        }
+
+        // Grade all parts
+        gradeSection('a', 12, 'PART A: Third Person Singular');
+        gradeSection('b', 12, 'PART B: Pronunciation');
+        gradeSection('c', 9, 'PART II: Negative Sentences');
+
+        // Add final score to output
+        const scorePercentage = Math.round((score / totalQuestions) * 100);
+        outputText += `======================================\n`;
+        outputText += ` FINAL SCORE: ${score} / ${totalQuestions} (${scorePercentage}%)\n`;
+        outputText += `======================================\n`;
+
+        // Display results on screen
+        const resultsDiv = document.getElementById('resultsBox');
+        resultsDiv.style.display = 'block';
+        resultsDiv.innerHTML = `<strong>Submission Complete!</strong><br>Your Score: ${score} / ${totalQuestions} (${scorePercentage}%)<br><small>Your results file has been downloaded.</small>`;
+
+        // Download the file
+        const blob = new Blob([outputText], { type: 'text/plain' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        const safeName = studentName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+        a.download = `quiz_results_${safeName}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+
+</body>
+</html>
