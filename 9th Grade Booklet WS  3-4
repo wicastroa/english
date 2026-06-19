@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1+ Booklet 9-10.pdf - Auto-Graded Worksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .worksheet-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        .question-row {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .question-row label {
+            font-weight: bold;
+            width: 100px;
+        }
+        input[type="text"], select {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .text-paragraph input {
+            width: 80px;
+            text-align: center;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border-color: #28a745 !important;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border-color: #dc3545 !important;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        #results {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="worksheet-container">
+    <h1>Auto-Graded English Worksheet</h1>
+    <p><em>Reference: "A1+ Booklet 9-10.pdf"</em>[cite: 1]</p>
+
+    <form id="worksheetForm">
+        <!-- Unit 1: Worksheet 3 -->
+        <div class="section">
+            <h2>Unit 1 - Worksheet 3[cite: 1]</h2>
+            
+            <h3>Part I</h3>
+            <p>Write the simple past of the following verbs. Select the correct -ed ending sound.[cite: 1]</p>
+            
+            <div id="w3_p1">
+                <!-- Javascript will populate these rows -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Part II</h3>
+            <p>Complete the following anecdote by filling in the blanks with the simple past form of the verbs: <em>plant, relax, study, walk, water</em>.[cite: 1]</p>
+            <p class="text-paragraph">
+                Yesterday morning, my friends and I couldn't take the bus, so we 1. <input type="text" data-answer="walked" class="auto-check"> to school. At school, we 2. <input type="text" data-answer="studied" class="auto-check"> the simple past of regular verbs.[cite: 1] After our break, we went to the outdoor greenhouse. There, we 3. <input type="text" data-answer="planted" class="auto-check"> some trees and 4. <input type="text" data-answer="watered" class="auto-check"> the rest of the plants and flowers.[cite: 1] After the hard work, we 5. <input type="text" data-answer="relaxed" class="auto-check"> for a moment.[cite: 1]
+            </p>
+        </div>
+
+        <!-- Unit 1: Worksheet 4 -->
+        <div class="section">
+            <h2>Unit 1 - Worksheet 4[cite: 1]</h2>
+            
+            <h3>Part I</h3>
+            <p>Match the base form of each verb with its past tense.[cite: 1]</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base Form[cite: 1]</th>
+                        <th>Past Tense Selection</th>
+                    </tr>
+                </thead>
+                <tbody id="w4_p1">
+                    <!-- Javascript will populate these rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>Part II</h3>
+            <p>Fill in the blanks with the correct past tense form of the verbs in parentheses.[cite: 1]</p>
+            <ol>
+                <li>Yesterday, I <input type="text" data-answer="wrote" class="auto-check"> (write) a letter to my friend.[cite: 1]</li>
+                <li>She <input type="text" data-answer="sang" class="auto-check"> (sing) beautifully at the concert.[cite: 1]</li>
+                <li>They <input type="text" data-answer="left" class="auto-check"> (leave) the party early.[cite: 1]</li>
+                <li>He <input type="text" data-answer="thought" class="auto-check"> (think) about his vacation all day.[cite: 1]</li>
+                <li>We <input type="text" data-answer="chose" class="auto-check"> (choose) the blue car.[cite: 1]</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3>Part III</h3>
+            <p>Complete the following short story by filling in the blanks with the correct simple past form of the verbs provided: <em>take, go, eat, have, go</em>.[cite: 1]</p>
+            <p class="text-paragraph">
+                "Last weekend, I 1. <input type="text" data-answer="went" class="auto-check"> to the park with my family.[cite: 1] We 2. <input type="text" data-answer="had" class="auto-check"> a picnic under a big tree.[cite: 1] My mom 3. <input type="text" data-answer="took" class="auto-check"> sandwiches and we all 4. <input type="text" data-answer="ate" class="auto-check"> them together.[cite: 1] After that, we 5. <input type="text" data-answer="went" class="auto-check"> for a long walk around the lake. It was a fun day!"[cite: 1]
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Part IV</h3>
+            <p>Unscramble the following verbs in the simple past tense. Then write the base form of each verb.[cite: 1]</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scrambled[cite: 1]</th>
+                        <th>Simple Past[cite: 1]</th>
+                        <th>Base Form[cite: 1]</th>
+                    </tr>
+                </thead>
+                <tbody id="w4_p4">
+                    <!-- Javascript will populate these rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="gradeWorksheet()">Submit Worksheet</button>
+        
+        <div id="results"></div>
+    </form>
+</div>
+
+<script>
+    // Data for Worksheet 3 Part I
+    const w3_p1_data = [
+        { verb: "walk", past: "walked", sound: "t" },
+        { verb: "plant", past: "planted", sound: "id" },
+        { verb: "study", past: "studied", sound: "d" },
+        { verb: "relax", past: "relaxed", sound: "t" },
+        { verb: "comb", past: "combed", sound: "d" },
+        { verb: "stay", past: "stayed", sound: "d" },
+        { verb: "fish", past: "fished", sound: "t" },
+        { verb: "dance", past: "danced", sound: "t" },
+        { verb: "clap", past: "clapped", sound: "t" },
+        { verb: "water", past: "watered", sound: "d" },
+        { verb: "move", past: "moved", sound: "d" },
+        { verb: "close", past: "closed", sound: "d" },
+        { verb: "paint", past: "painted", sound: "id" },
+        { verb: "laugh", past: "laughed", sound: "t" },
+        { verb: "chat", past: "chatted", sound: "id" }
+    ];
+
+    const w3_p1_container = document.getElementById("w3_p1");
+    w3_p1_data.forEach((item, index) => {
+        w3_p1_container.innerHTML += `
+            <div class="question-row">
+                <label>${index + 1}. ${item.verb}</label>
+                <input type="text" placeholder="Past Form" data-answer="${item.past}" class="auto-check">
+                <select data-answer="${item.sound}" class="auto-check">
+                    <option value="">-- Sound --</option>
+                    <option value="d">/d/</option>
+                    <option value="t">/t/</option>
+                    <option value="id">/Id/</option>
+                </select>
+            </div>
+        `;
+    });
+
+    // Data for Worksheet 4 Part I
+    const w4_p1_data = [
+        { base: "wake", past: "woke" }, { base: "get", past: "got" },
+        { base: "take", past: "took" }, { base: "have", past: "had" },
+        { base: "eat", past: "ate" }, { base: "go", past: "went" },
+        { base: "sleep", past: "slept" }, { base: "do", past: "did" },
+        { base: "put", past: "put" }, { base: "feed", past: "fed" }
+    ];
+    
+    const pastOptions = w4_p1_data.map(v => v.past).sort();
+    const w4_p1_container = document.getElementById("w4_p1");
+    
+    w4_p1_data.forEach((item, index) => {
+        let optionsHtml = `<option value="">-- Select --</option>`;
+        pastOptions.forEach(opt => {
+            optionsHtml += `<option value="${opt}">${opt}</option>`;
+        });
+
+        w4_p1_container.innerHTML += `
+            <tr>
+                <td>${index + 1}. ${item.base}</td>
+                <td>
+                    <select data-answer="${item.past}" class="auto-check">
+                        ${optionsHtml}
+                    </select>
+                </td>
+            </tr>
+        `;
+    });
+
+    // Data for Worksheet 4 Part IV
+    const w4_p4_data = [
+        { scrambled: "tfel", past: "left", base: "leave" },
+        { scrambled: "otg", past: "got", base: "get" },
+        { scrambled: "koot", past: "took", base: "take" },
+        { scrambled: "dah", past: "had", base: "have" },
+        { scrambled: "tae", past: "ate", base: "eat" },
+        { scrambled: "netw", past: "went", base: "go" },
+        { scrambled: "plets", past: "slept", base: "sleep" },
+        { scrambled: "ddi", past: "did", base: "do" },
+        { scrambled: "tup", past: "put", base: "put" },
+        { scrambled: "def", past: "fed", base: "feed" },
+        { scrambled: "okew", past: "woke", base: "wake" },
+        { scrambled: "etrow", past: "wrote", base: "write" },
+        { scrambled: "werd", past: "drew", base: "draw" },
+        { scrambled: "gnas", past: "sang", base: "sing" },
+        { scrambled: "thougth", past: "thought", base: "think" },
+        { scrambled: "guhcta", past: "caught", base: "catch" },
+        { scrambled: "sohce", past: "chose", base: "choose" },
+        { scrambled: "emac", past: "came", base: "come" },
+        { scrambled: "llef", past: "fell", base: "fall" },
+        { scrambled: "dhear", past: "heard", base: "hear" }
+    ];
+
+    const w4_p4_container = document.getElementById("w4_p4");
+    w4_p4_data.forEach((item, index) => {
+        w4_p4_container.innerHTML += `
+            <tr>
+                <td>${index + 1}. ${item.scrambled}</td>
+                <td><input type="text" data-answer="${item.past}" class="auto-check"></td>
+                <td><input type="text" data-answer="${item.base}" class="auto-check"></td>
+            </tr>
+        `;
+    });
+
+    // Grading Logic
+    function gradeWorksheet() {
+        const inputs = document.querySelectorAll('.auto-check');
+        let score = 0;
+        let total = inputs.length;
+
+        inputs.forEach(input => {
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+
+            // Reset classes
+            input.classList.remove('correct', 'incorrect');
+
+            if (userAnswer === correctAnswer) {
+                input.classList.add('correct');
+                score++;
+            } else {
+                input.classList.add('incorrect');
+            }
+        });
+
+        const resultsDiv = document.getElementById('results');
+        const percentage = Math.round((score / total) * 100);
+        
+        let color = "red";
+        if (percentage >= 80) color = "green";
+        else if (percentage >= 60) color = "orange";
+
+        resultsDiv.innerHTML = `Your Score: <span style="color: ${color}">${score} / ${total} (${percentage}%)</span>`;
+        resultsDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
